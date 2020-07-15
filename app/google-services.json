@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "952203465722",
+    "firebase_url": "https://vitandaandroid.firebaseio.com",
+    "project_id": "vitandaandroid",
+    "storage_bucket": "vitandaandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952203465722:android:f42f34c0f18620f97eca43",
+        "android_client_info": {
+          "package_name": "co.immers.vitandaandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952203465722-onbdtsvkmj7v1s7b6mfm2pnh4eijvta1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.immers.vitandaandroid",
+            "certificate_hash": "60e6697409ddeb525fa729952e62a9827be709b3"
+          }
+        },
+        {
+          "client_id": "952203465722-juti0j8e0vgh02riilvlnc0oom01ai5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.immers.vitandaandroid",
+            "certificate_hash": "5f571472177c774c54edee283f9c928a2dde8ee3"
+          }
+        },
+        {
+          "client_id": "952203465722-1i2t3ffojt53fq3a53h5krhaubbrflf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEWLAET2qRjmYHh1bg09-2_yeCQTiCXMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952203465722-1i2t3ffojt53fq3a53h5krhaubbrflf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

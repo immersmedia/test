@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/im_toplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <TextView
+            android:id="@+id/scoreplate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/roundimage"
+            android:backgroundTint="@color/primary_light"
+            android:tint="#212121"
+            android:text="1515"
+            android:textColor="@color/primary_dark"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/im_deb1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center_vertical"
+            android:text="Inviter Name"
+            android:textSize="@dimen/textsize_standard"
+            app:layout_constraintLeft_toLeftOf="@id/im_deb1_img"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/primary"
+
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im_deb1_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#BDBDBD"
+            android:tint="#212121"
+            app:layout_constraintLeft_toRightOf="@id/scoreplate"
+            app:layout_constraintTop_toBottomOf="@id/modlayout">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im_deb2_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#BDBDBD"
+            android:tint="#212121"
+
+            app:layout_constraintTop_toTopOf="@id/im_deb1_img"
+            app:layout_constraintLeft_toRightOf="@id/im_deb1_img"
+            app:layout_constraintBottom_toBottomOf="@id/im_deb1_img"
+            android:layout_marginHorizontal="5dp"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im_mod_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#BDBDBD"
+            android:tint="#212121"
+            app:layout_constraintTop_toTopOf="@id/im_deb1_img"
+            app:layout_constraintLeft_toRightOf="@id/im_deb2_img"
+            app:layout_constraintBottom_toBottomOf="@id/im_deb1_img"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/im_deb2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="Inviter Name"
+            android:textSize="@dimen/textsize_standard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/im_textlabel4"
+            android:textColor="@color/primary"
+
+
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/im_textlabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="engages with "
+
+            app:layout_constraintTop_toTopOf="@id/im_deb1_name"
+
+            app:layout_constraintLeft_toRightOf="@id/im_deb1_name"
+            android:textStyle="italic"
+            android:textColor="@color/primary_darktext"
+            android:layout_marginHorizontal="10dp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/im_debatetopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center_vertical"
+            android:text="Details of the debate1 \n uyuiwqeqw"
+            app:layout_constraintLeft_toLeftOf="@id/im_deb1_img"
+            app:layout_constraintTop_toBottomOf="@id/im_deb1_name"
+            android:textColor="@color/primary_dark"
+            android:textStyle="bold"
+            >
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/modlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/im_deb1_img"
+            app:layout_constraintTop_toBottomOf="@id/im_debatetopic"
+
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/im_txtlabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_vertical"
+                android:text="moderated by"
+                android:textColor="@color/primary_darktext"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                >
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/im_mod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Moderator Name"
+                android:textColor="@color/primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/im_txtlabel2">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/imm_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/divider"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/im_rightlo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@id/im_toplo"
+
+        android:visibility="visible"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/im_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="12:02"
+            android:textSize="@dimen/textsize_extrasmall"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="50dp"
+            >
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <TextView
+            android:id="@+id/im_myturnind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_extrasmall"
+            android:text="YOUR TURN"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:visibility="gone"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/im_debstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WAITING"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/textsize_extrasmall"
+            >
+
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

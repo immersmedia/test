@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnavigation_myconvos"
+        android:icon="@drawable/ic_th_list_solid"
+        android:title="@string/title_myconvos" />
+
+    <item
+        android:id="@+id/mnavigation_invites"
+        android:icon="@drawable/ic_address_card_solid"
+        android:title="@string/title_myinvites" />
+    <item
+        android:id="@+id/mnavigation_trending"
+        android:icon="@drawable/ic_burn_solid"
+        android:title="@string/title_trending" />
+    <item
+        android:id="@+id/mnavigation_people"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="@string/title_people" />
+</menu>
+
+

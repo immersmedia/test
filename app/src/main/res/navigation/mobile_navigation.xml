@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_myconvos">
+
+    <fragment
+        android:id="@+id/navigation_myconvos"
+        android:name="co.tau.manthan.dashboard.ui.myconvs.MyConvsFragment"
+        android:label="@string/title_myconvos"
+        tools:layout="@layout/fragment_myconvos" />
+
+    <fragment
+        android:id="@+id/navigation_invites"
+        android:name="co.tau.manthan.dashboard.ui.invites.InvitesFragment"
+        android:label="@string/title_myinvites"
+        tools:layout="@layout/fragment_invites" />
+
+    <fragment
+        android:id="@+id/navigation_trending"
+        android:name="co.tau.manthan.dashboard.ui.trendingconvos.TrendingFragment"
+        android:label="@string/title_trending"
+        tools:layout="@layout/fragment_trending" />
+
+    <fragment
+        android:id="@+id/navigation_people"
+        android:name="co.tau.manthan.dashboard.ui.people.peoplefragment"
+        android:label="@string/title_people"
+        tools:layout="@layout/fragment_people" />
+</navigation>

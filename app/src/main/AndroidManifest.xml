@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.tau.manthan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Materialtheme">
+
+        <activity android:name="co.tau.manthan.error.ErrorActivity"></activity>
+        <activity
+            android:name="co.tau.manthan.infoscreen.InfoScreen"
+            android:label="@string/title_activity_info_screen"></activity>
+        <activity android:name="co.tau.manthan.Invitation.Invitation" />
+        <activity
+            android:name="co.tau.manthan.dashboard.DashboardActivity"
+            android:label="@string/title_activity_dashboard">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app.manthanapp.com"
+                    android:pathPattern="/dashboard"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name="co.tau.manthan.startdeb.Startdeb"
+                    android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.tau.manthan.urltodeb.Urltodeb"
+            android:label="join">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app.manthanapp.com"
+                    android:pathPrefix="/join/"
+                    android:scheme="http" />
+                <data
+                    android:host="app.manthanapp.com"
+                    android:pathPrefix="/join/"
+                    android:scheme="manthan" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.tau.manthan.login.SignInActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.tau.manthan.DebViewPlay.DebViewPlay">
+
+        </activity>
+
+
+
+        <activity android:name="co.tau.manthan.ModViewPlay.ModViewPlay" />
+        <activity android:name="co.tau.manthan.ViewerPlay.ViewerPlay" />
+        <activity android:name="co.tau.manthan.Profile.ProfileActivity" />
+    </application>
+
+</manifest>

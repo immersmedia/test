@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="primary">#5a6abf</color>-->
+<!--    <color name="primary_dark">#23408e</color>-->
+<!--    <color name="primary_light">#8d98f2</color>-->
+<!--    <color name="accent">#FF5722</color>-->
+<!--    <color name="primary_text">#FFFFFF</color>-->
+<!--    <color name="secondary_text">#757575</color>-->
+<!--    <color name="icons">#FFFFFF</color>-->
+<!--    <color name="divider">#BDBDBD</color>-->
+<!--    <color name="accent_light">#FFB300</color>-->
+
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#FF5722</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="accent_light">#FF9800</color>
+
+
+<!--    <color name="primary">#2196F3</color>-->
+<!--    <color name="primary_dark">#1976D2</color>-->
+<!--    <color name="primary_light">#BBDEFB</color>-->
+<!--    <color name="accent">#FF5722</color>-->
+<!--    <color name="primary_text">#FFFFFF</color>-->
+<!--    <color name="secondary_text">#757575</color>-->
+<!--    <color name="icons">#FFFFFF</color>-->
+<!--    <color name="divider">#BDBDBD</color>-->
+
+<!--    <color name="accent_light">#ffab91</color>-->
+
+<!--    <color name="primary">#673AB7</color>-->
+<!--    <color name="primary_dark">#512DA8</color>-->
+<!--    <color name="primary_light">#D1C4E9</color>-->
+<!--    <color name="accent">#FF5722</color>-->
+<!--    <color name="primary_text">#FFFFFF</color>-->
+<!--    <color name="secondary_text">#757575</color>-->
+<!--    <color name="icons">#FFFFFF</color>-->
+<!--    <color name="divider">#BDBDBD</color>-->
+
+    <color name="primary_darktext">#212121</color>
+
+    <color name="myback">#0097A7</color>
+    <color name="oppback">#FFFFFF</color>
+
+    <color name="primary_other">#FFFFFF</color>
+
+    <color name="msg_right_inactive">#0097A7</color>
+    <color name="msg_right_active">#0097A7</color>
+    <color name="msg_left_inactive">#0097A7</color>
+    <color name="msg_left_active">#0097A7</color>
+    <color name="msg_sys">#BBDEFB</color>
+
+
+    <color name="background_contrast_light">#ffffff</color>
+    <color name="background_light">#e8eaf6</color>
+    <color name="background_dark">#c5cae9</color>
+
+
+
+
+
+</resources>

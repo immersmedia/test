@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "co.immers.vitandaandroid",
+    "sha256_cert_fingerprints":
+    ["A8:2D:D3:A0:80:78:57:8B:3E:10:C7:85:DA:6A:AD:18:AE:DF:72:47:EF:43:A9:EB:28:62:03:50:20:CB:B4:63"]
+  }
+}]

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startdeb.Startdeb"
+    android:id="@+id/sdrootlo"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/startdeb_topic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAlignment="center"
+        android:hint="Lets do Manthan on this topic "
+
+        android:textColor="@color/primary"
+        android:background="@color/background_light">
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <LinearLayout
+        android:id="@+id/lo_playercreds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startdeb_topic">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playerfor"
+            app:layout_constraintTop_toBottomOf="@id/startdeb_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/primary"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lo_forcreds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/forinvitetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="Invite someone"
+                    android:layout_marginVertical="5dp"
+                    android:textSize="@dimen/textsize_small"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="5dp"
+
+                    >
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/playerforpic"
+                    app:layout_constraintTop_toBottomOf="@id/forinvitetext"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginHorizontal="10dp"
+                    >
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:id="@+id/playerforname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playername"
+                    app:layout_constraintTop_toTopOf="@id/playerforpic"
+                    app:layout_constraintLeft_toRightOf="@id/playerforpic"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/primary_text"
+                    >
+                </TextView>
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/playerforname"
+                    app:layout_constraintLeft_toRightOf="@id/playerforpic"
+                    android:id="@+id/playerforsid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playersid"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/primary_text"
+                    >
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lo_debinvite_myself"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/debinviteme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    android:layout_marginHorizontal="10dp"
+                    android:text="INVITE"
+                    android:textColor="@color/primary_dark"
+                    android:backgroundTint="@color/primary_text"
+                    android:visibility="gone"
+                    >
+                </androidx.appcompat.widget.AppCompatButton>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playerag"
+            app:layout_constraintTop_toBottomOf="@id/startdeb_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:padding="5dp"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lo_agcreds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="visible"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/aginvitetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="Invite a Co-Conversationalist"
+                    android:layout_marginVertical="5dp"
+                    android:textSize="@dimen/textsize_small"
+                    android:textColor="@color/primary_dark"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="5dp"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/playeragpic"
+                    app:layout_constraintTop_toBottomOf="@id/aginvitetext"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginHorizontal="10dp"
+                    >
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:id="@+id/playeragname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playername"
+                    app:layout_constraintTop_toBottomOf="@id/aginvitetext"
+                    app:layout_constraintLeft_toRightOf="@id/playeragpic"
+                    android:layout_marginHorizontal="10dp"
+                    >
+                </TextView>
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/playeragname"
+                    app:layout_constraintLeft_toRightOf="@id/playeragpic"
+                    android:id="@+id/playeragsid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playersid"
+                    android:layout_marginHorizontal="10dp"
+                    >
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lo_debinvites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/debopponentinvite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Invite"
+                    android:textColor="@color/primary_text"
+                    android:backgroundTint="@color/primary"
+                    android:visibility="visible"
+                    >
+                </androidx.appcompat.widget.AppCompatButton>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lo_linkshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lo_playercreds"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/im_txtlabel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share this link"
+            android:textSize="@dimen/textsize_small"
+            android:textColor="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/deblink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="http://app.manthanapp.com/join/abcd"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"
+            app:layout_constraintTop_toBottomOf="@id/im_txtlabel3"
+            >
+        </TextView>
+        <ImageView
+            android:id="@+id/deblinkshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/deblink"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_share_24"
+            android:tint="@color/primary"
+            app:layout_constraintLeft_toLeftOf="parent">
+        </ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createconv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create a conversation"
+        android:textColor="@color/primary_text"
+        android:enabled="true"
+        android:background="@drawable/buttongreyout"
+
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

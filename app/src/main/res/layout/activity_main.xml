@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DebViewPlay.DebViewPlay"
+    android:background="@drawable/bcktexturemoroccan">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dv_toplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="5dp"
+        android:background="@drawable/bgkwithshadow"
+        android:elevation="8dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dv_leftImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_account_circle_black_36dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#BDBDBD"
+            android:layout_gravity="center_vertical"
+            android:tint="#212121"
+            android:layout_marginHorizontal="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/dv_leftname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dv_leftImageView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:text="Opponent Name"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/textsize_small"
+            >
+
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dv_centerImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_account_circle_black_36dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#BDBDBD"
+            android:layout_gravity="center_vertical"
+            android:tint="#212121"
+            android:layout_marginHorizontal="5dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/dv_centername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dv_centerImageView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:text="Moderator Name"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/textsize_small"
+            android:visibility="gone"
+            >
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dv_rightImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_account_circle_black_36dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#BDBDBD"
+            android:layout_gravity="center_vertical"
+            android:tint="#212121"
+            android:layout_marginHorizontal="5dp"
+            />
+
+        <TextView
+            android:id="@+id/dv_rightname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dv_leftImageView"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginHorizontal="10dp"
+            android:text="You"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/textsize_small"
+            >
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dv_debtitle"
+            app:layout_constraintTop_toBottomOf="@id/dv_leftname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:background="@drawable/bgkwithshadow"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_small"
+            android:maxLines="2"
+            >
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dv_turnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dv_toplo">
+
+        <View
+            android:id="@+id/dv_turnviewleft"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/accent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dv_turnviewmod"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </View>
+
+        <View
+            android:id="@+id/dv_turnviewmod"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/accent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dv_turnviewright"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dv_turnviewleft"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <View
+            android:id="@+id/dv_turnviewright"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/accent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dv_turnviewmod"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dv_toplo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dv_turnview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/bgkwithshadow"
+        android:backgroundTint="@color/background_light"
+        android:elevation="4dp"
+        >
+        <LinearLayout
+            android:id="@+id/dv_lo_playercreds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dv_credlofor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/deblabel"
+                android:backgroundTint="@color/primary_light"
+                android:paddingHorizontal="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/dv_credfor_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/dv_credfor_buttonlo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Waiting for you"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_small"
+                    android:textColor="@color/primary_text"
+                    android:padding="10dp"
+                    >
+
+                </TextView>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/dv_credfor_buttonlo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/dv_credfor_txt"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginHorizontal="20dp"
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/dv_credfor_acceptbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:text="Accept"
+                        android:textSize="@dimen/textsize_small"
+                        android:textColor="@color/primary_text"
+                        android:backgroundTint="@color/primary"
+                        android:visibility="visible"
+
+                        >
+                    </androidx.appcompat.widget.AppCompatButton>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dv_credlo_ag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/deblabel"
+                android:backgroundTint="@color/primary_light"
+                android:paddingHorizontal="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/dv_credag_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/dv_credag_buttonlo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Waiting for you"
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize_small"
+                    android:textColor="@color/primary_text"
+                    android:padding="10dp"
+
+                    >
+
+                </TextView>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/dv_credag_buttonlo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/dv_credag_txt"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginHorizontal="20dp"
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/dv_credag_acceptbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:text="Accept"
+                        android:textSize="@dimen/textsize_small"
+                        android:textColor="@color/primary_text"
+                        android:backgroundTint="@color/primary"
+                        android:visibility="visible"
+
+                        >
+                    </androidx.appcompat.widget.AppCompatButton>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dv_toplo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dv_toplo2"
+        android:padding="10dp"
+        android:background="@drawable/bgkwithshadow"
+        android:backgroundTint="@color/background_light"
+        android:elevation="4dp"
+        >
+        <TextView
+            android:id="@+id/dv_finishtxtlabel0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="This conversation has finished"
+            android:gravity="center"
+            android:textColor="@color/primary"
+            android:layout_marginVertical="10dp"
+            android:textSize="@dimen/textsize_small"
+            ></TextView>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/dv_finishtxtlabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dv_finishtxtlabel0">
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dv_messageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/dv_toplo3"
+        app:layout_constraintBottom_toTopOf="@id/dv_bottompanel"
+        android:background="@drawable/bcktexturemoroccan"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dv_bottompanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dv_sendmessagelayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:paddingTop="5dp"
+            >
+            <ImageView
+                android:id="@+id/dv_addMessageImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/dv_messageEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/dv_addMessageImageView"
+                app:layout_constraintRight_toLeftOf="@id/dv_sendButton"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint=" Your Argument here"
+                android:textSize="@dimen/textsize_standard"
+                android:textColorHint="@color/secondary_text"
+                android:layout_marginHorizontal="10dp"
+                android:lines="3"
+                android:background="@drawable/deblabel"
+                android:backgroundTint="@color/primary_text"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                />
+            <ImageButton
+                android:id="@+id/dv_sendButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:text="SEND"
+                android:src="@drawable/ic_send_black_24dp"
+                android:tint="@color/primary_text"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingVertical="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/deblabel"
+                android:backgroundTint="@color/primary"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dv_sendmessagelayoutop"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:paddingTop="5dp"
+            >
+            <ImageView
+                android:id="@+id/dv_addMessageImageViewop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/dv_messageEditTextop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/dv_addMessageImageViewop"
+                app:layout_constraintRight_toLeftOf="@id/dv_sendButtonop"
+                android:hint=" Accept , Reject or ask help."
+                android:textSize="@dimen/textsize_standard"
+                android:textColorHint="@color/secondary_text"
+                android:layout_marginHorizontal="10dp"
+                android:lines="3"
+                android:background="@drawable/deblabel"
+                android:backgroundTint="@color/primary_text"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/dv_sendButtonop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:text="SEND"
+                android:src="@drawable/ic_send_black_24dp"
+                android:tint="@color/primary_text"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingVertical="12dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/deblabel"
+                android:backgroundTint="@color/accent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/conscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:tint="@color/primary_text"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:text="aa"
+        android:textColor="@color/primary_text"
+        app:backgroundTint="@color/primary_dark"
+        android:padding="10dp"
+        app:icon="@drawable/ic_logosvgsolidoutline"
+        app:iconTint="@color/primary_text"
+        app:iconSize="@dimen/textsize_large"
+
+        >
+
+    </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
